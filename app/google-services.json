@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982078492166",
+    "project_id": "we-found-app",
+    "storage_bucket": "we-found-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982078492166:android:01f4462fe4297b56503d87",
+        "android_client_info": {
+          "package_name": "com.example.wefound_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIGo3QOWr-tVL2JCX8WiwSSN9SNyzAcMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeFoundApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.WeFoundApplication" parent="Base.Theme.WeFoundApplication" />
+
+    <!-- Splash screen theme -->
+    <style name="Theme.WeFoundApplication.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="HomeActionButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">230dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="backgroundTint">#1EB8D1</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="elevation">6dp</item>
+    </style>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@android:color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:paddingBottom="20dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/marko_one"
+                android:text="ITEM REPORT FORM"
+                android:textColor="#222222"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Image Upload with Camera Icon -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true">
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_square">
+
+                    <!-- This will display the selected/uploaded image -->
+                    <ImageView
+                        android:id="@+id/imgUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Upload Item Image"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground" />
+
+                    <!-- Camera Icon overlay -->
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_camera" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Item Name -->
+            <EditText
+                android:id="@+id/etItemName"
+                style="@style/FormField"
+                android:hint="Item Name" />
+
+            <!-- Category -->
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                style="@style/FormSpinner" />
+
+            <!-- Date Lost/Found -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/etDate"
+                    style="@style/FormField"
+                    android:hint="Date Lost/Found"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:id="@+id/iconDate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_date" />
+            </RelativeLayout>
+
+            <!-- Last Seen Location -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    style="@style/FormField"
+                    android:hint="Last Seen Location"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:id="@+id/iconMap"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_map_marker" />
+            </RelativeLayout>
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/etDescription"
+                style="@style/FormField"
+                android:hint="Description"
+                android:minLines="3"
+                android:gravity="top" />
+
+            <!-- Type -->
+            <Spinner
+                android:id="@+id/spinnerType"
+                style="@style/FormSpinner" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="CANCEL"
+                    android:backgroundTint="#B0BEC5"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="SUBMIT"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

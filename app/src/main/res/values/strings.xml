@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeFound App - project</string>
+    <string name="login_prompt">Have an account? Login</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
